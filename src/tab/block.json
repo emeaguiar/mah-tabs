@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "mah/mah-tab",
+	"version": "0.1.0",
+	"title": "Tab",
+	"category": "widgets",
+	"parent": [ "mah/mah-tabs" ],
+	"icon": "feedback",
+	"description": "Single Tab block",
+	"example": {},
+	"attributes": {
+		"index": {
+			"type": "number",
+			"default": 0
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "mah-tabs",
+	"render": "file:./template.php"
+}

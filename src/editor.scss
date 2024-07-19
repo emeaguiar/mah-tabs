@@ -1,0 +1,17 @@
+/**
+ * Editor styles for the tabs block.
+ */
+
+.wp-block-mah-mah-tabs__button-editor {
+	width: 100%;
+
+	&:hover {
+		background-color: var(--wp-admin-theme-color, #3858e9);
+		color: var(--wp-components-color-accent-inverted, #fff);
+	}
+}
+
+/* Add a margin to the arrow icon */
+.wp-block-mah-mah-tabs__button-editor > svg {
+	margin-inline: auto 0.5rem;
+}

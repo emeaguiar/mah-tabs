@@ -1,0 +1,70 @@
+/**
+ * Basic styles for the tabs block.
+ *
+ * @TODO: Add breakpoints in variables
+ * @TODO: Maybe use a CSS Framework
+ */
+
+.wp-block-mah-mah-tabs {
+	display: none;
+	gap: 1rem;
+	grid-template-columns: 1fr 2fr;
+	inline-size: var(--width);
+	padding-block: var(--spacing--3xl);
+
+	&[aria-selected="true"],
+	&.wp-block-mah-mah-tab--active {
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		display: grid;
+		padding-block: 2rem;
+
+		> .wp-block-mah-mah-tabs {
+			padding: 0;
+		}
+	}
+}
+
+.wp-block-mah-mah-tabs > .wp-block-mah-mah-tabs {
+	grid-template-columns: 1fr;
+}
+
+.wp-block-mah-mah-tabs .wp-block-mah-mah-tab:not(.wp-block-mah-mah-tab--active) {
+	display: none;
+}
+
+.wp-block-mah-mah-tabs .wp-block-mah-mah-tabs__list {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	list-style: none;
+	margin-inline-start: 0;
+	padding-inline-start: 0;
+
+	@media (min-width: 768px) {
+		flex-direction: column;
+		margin-block-start: 1rem;
+	}
+}
+
+.wp-block-mah-mah-tabs__button {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--contrast);
+	border-radius: 0.275rem;
+	color: var(--wp--preset--color--contrast);
+	cursor: pointer;
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: 500;
+	padding: 1rem;
+	inline-size: 100%;
+	transition: background-color 0.3s, color 0.3s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+	}
+}
