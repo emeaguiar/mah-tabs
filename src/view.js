@@ -3,7 +3,15 @@
  */
 import domReady from '@wordpress/dom-ready';
 
+/**
+ * Tabs block class
+ * Manages hiding / showing tabs
+ */
 class Tabs {
+	/**
+	 * Constructor
+	 * @param {HTMLElement} block The tabs block
+	 */
 	constructor( block ) {
 		this.block = block;
 		this.tabList = block.querySelector( '[role="tablist"]' );
@@ -78,6 +86,7 @@ class Tabs {
 
 	/**
 	 * Change the active tab
+	 *
 	 * @param {string} target Tab to display.
 	 */
 	changeTo( target ) {

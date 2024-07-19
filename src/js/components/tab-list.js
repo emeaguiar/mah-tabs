@@ -14,7 +14,7 @@ import TabButton from './tab-button';
  * TabList component
  * Renders the list of tabs for navigation.
  *
- * todo: Find a way of adding Blockprops to the buttons.
+ * todo: Find a way of adding blockprops to the buttons.
  *
  * @param {Object}   props                   Component properties
  * @param {Array}    props.tabs              Existing tabs.

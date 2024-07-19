@@ -6,7 +6,7 @@
  * @var string $content Block default content.
  * @var \WP_Block $block Block instance.
  *
- * @package CreateBlock
+ * @package Mah_Tabs
  */
 
 $wrapper_attributes = get_block_wrapper_attributes(

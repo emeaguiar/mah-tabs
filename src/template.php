@@ -7,7 +7,7 @@
  * @var string $content Block default content.
  * @var \WP_Block $block Block instance.
  *
- * @package CreateBlock
+ * @package Mah_Tabs
  */
 
 // Block level classes and styles.
